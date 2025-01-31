@@ -56,13 +56,15 @@ function App() {
                 Join KeNaWPWA in our mission to create sustainable waste management solutions while improving lives.
               </p>
               <div className="flex space-x-4">
-                <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 flex items-center">
-                  Join Now
-                  <ChevronRight className="w-5 h-5 ml-2" />
-                </button>
-                <button className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50">
-                  Learn More
-                </button>
+              <a href="#download" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 flex items-center">
+  Join Now
+  <ChevronRight className="w-5 h-5 ml-2" />
+</a>
+
+<a href="#download" className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50">
+  Learn More
+</a>
+
               </div>
             </div>
             <div className="md:w-1/2">
