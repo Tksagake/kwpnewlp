@@ -33,7 +33,7 @@ function App() {
               <a href="#initiatives" className="text-gray-600 hover:text-blue-600">Initiatives</a>
               <a href="#training" className="text-gray-600 hover:text-blue-600">Training</a>
               <a href="#download" className="text-gray-600 hover:text-blue-600">Download App</a>
-                <a href="http://maratech.co.ke" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center">
+                <a href="https://kenwpwa.co.ke/login" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center">
                 <LogIn className="w-4 h-4 mr-2" />
                 Dashboard Login
                 </a>
