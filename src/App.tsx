@@ -187,7 +187,7 @@ function App() {
         <div className="text-center bg-white p-4 rounded-lg shadow-lg">
           <h3 className="text-lg font-semibold mb-4 text-blue-600">Pickers' App</h3>
           <img src="https://res.cloudinary.com/dylmsnibf/image/upload/v1738155869/pickers_bb3evc.jpg" alt="Pickers' App" className="rounded-lg mb-4 mx-auto" />
-          <a href="http://kenwpwa.co.ke/apps/waste.apk" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center justify-center mx-auto">
+          <a href="https://kenwpwa.co.ke/apps/waste.apk" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center justify-center mx-auto">
             <Download className="w-4 h-4 mr-2" />
             Download Now
           </a>
@@ -195,7 +195,7 @@ function App() {
         <div className="text-center bg-white p-4 rounded-lg shadow-lg">
           <h3 className="text-lg font-semibold mb-4 text-blue-600">Managers' App</h3>
           <img src="https://res.cloudinary.com/dylmsnibf/image/upload/v1738155879/managers_v3jkfz.jpg" alt="Managers' App" className="rounded-lg mb-4 mx-auto" />
-          <a href="http://kenwpwa.co.ke/apps/manager.apk" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center justify-center mx-auto">
+          <a href="https://kenwpwa.co.ke/apps/manager.apk" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center justify-center mx-auto">
             <Download className="w-4 h-4 mr-2" />
             Download Now
           </a>
