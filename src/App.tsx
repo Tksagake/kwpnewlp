@@ -230,7 +230,7 @@ function App() {
               <ul className="space-y-2">
                 <li className="flex items-center text-gray-400">
                   <Phone className="w-4 h-4 mr-2" />
-                  +254 123 456 789
+                  +254 702 501 135
                 </li>
                 <li className="flex items-center text-gray-400">
                   <Mail className="w-4 h-4 mr-2" />
