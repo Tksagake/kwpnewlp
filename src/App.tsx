@@ -1,8 +1,6 @@
 import React from 'react';
 import { 
   Recycle, 
-  Users, 
-  BookOpen, 
   Download, 
   LogIn, 
   MapPin, 
@@ -10,10 +8,8 @@ import {
   Mail,
   ChevronRight,
   Leaf,
-  GraduationCap,
   Scale,
   Trash2,
-  QrCode
 } from 'lucide-react';
 import CountUp from 'react-countup';
 
@@ -43,7 +39,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-white">
+      <section className="pt-30 pb-20 bg-gradient-to-br from-blue-50 to-white">
         {/* Your content here */}
       </section>
         <div className="container mx-auto px-4">
@@ -67,7 +63,7 @@ function App() {
 
               </div>
             </div>
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 mt-6">
               <img 
                 src="https://res.cloudinary.com/dylmsnibf/image/upload/v1738153958/Waste_pickers_NRB_qhnjbu.jpg"
                 alt="Waste Management"
