@@ -182,16 +182,16 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8">
         <div className="text-center bg-white p-4 rounded-lg shadow-lg">
           <h3 className="text-lg font-semibold mb-4 text-blue-600">Pickers' App</h3>
-          <img src="https://res.cloudinary.com/dylmsnibf/image/upload/v1738155869/pickers_bb3evc.jpg" alt="Pickers' App" className="rounded-lg mb-4 mx-auto" />
-          <a href="https://kenwpwa.co.ke/apps/waste.apk" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center justify-center mx-auto">
+          <img src="https://res.cloudinary.com/dylmsnibf/image/upload/v1738153746/WhatsApp_Image_2025-01-29_at_15.28.35_6b360c36_opwbpe.jpg" alt="Pickers' App" className="rounded-lg mb-4 mx-auto" />
+          <a href="/waste.apk" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center justify-center mx-auto">
             <Download className="w-4 h-4 mr-2" />
             Download Now
           </a>
         </div>
         <div className="text-center bg-white p-4 rounded-lg shadow-lg">
           <h3 className="text-lg font-semibold mb-4 text-blue-600">Managers' App</h3>
-          <img src="https://res.cloudinary.com/dylmsnibf/image/upload/v1738155879/managers_v3jkfz.jpg" alt="Managers' App" className="rounded-lg mb-4 mx-auto" />
-          <a href="https://kenwpwa.co.ke/apps/manager.apk" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center justify-center mx-auto">
+          <img src=""https://res.cloudinary.com/dylmsnibf/image/upload/v1738153746/WhatsApp_Image_2025-01-29_at_15.28.35_6b360c36_opwbpe.jpg"" alt="Managers' App" className="rounded-lg mb-4 mx-auto" />
+          <a href="/manager.apk" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center justify-center mx-auto">
             <Download className="w-4 h-4 mr-2" />
             Download Now
           </a>
