@@ -354,24 +354,7 @@ function App() {
       </section>
 
       {/* Download App Section */}
-      <section id="download" className="py-24 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
-        {/* Animated background */}
-        <motion.div 
-          className="absolute inset-0 opacity-30"
-          animate={{ 
-            backgroundPosition: ['0% 0%', '100% 100%'],
-          }}
-          transition={{ 
-            duration: 20,
-            repeat: Infinity,
-            repeatType: 'reverse',
-          }}
-          style={{
-            backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(34, 197, 94, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.3) 0%, transparent 50%)',
-            backgroundSize: '200% 200%',
-          }}
-        />
-        
+      <section id="download" className="py-24 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: -30 }}
@@ -379,86 +362,91 @@ function App() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-green-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent mb-6">
-              Download Our Mobile Apps
+            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+              Download Our Mobile App
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Join thousands of waste pickers already using KeNaWPWA to transform their livelihoods
             </p>
           </motion.div>
 
-          {/* App Cards Grid */}
+          {/* App Card */}
           <motion.div 
-            className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 mb-12"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
+            className="max-w-4xl mx-auto"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            {/* Pickers' App Card */}
             <motion.div 
-              variants={itemVariants}
-              className="bg-gradient-to-br from-slate-700/60 to-purple-700/40 p-8 rounded-3xl shadow-2xl border-2 border-green-500/50 hover:border-green-500 transition-all duration-300"
-              whileHover={{ y: -15, scale: 1.02 }}
+              className="bg-gradient-to-br from-gray-50 to-gray-100 p-12 rounded-3xl shadow-2xl border-2 border-gray-200"
+              whileHover={{ y: -10 }}
             >
-              <div className="flex flex-col h-full">
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                {/* QR Code */}
                 <motion.div
-                  className="rounded-2xl mb-8 overflow-hidden shadow-2xl border-2 border-green-500/30"
-                  whileHover={{ scale: 1.08 }}
-                >
-                  <img src="/frame.png" alt="Pickers' App" className="w-full h-64 object-cover" />
-                </motion.div>
-                
-                <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
-                  Pickers' App
-                </h3>
-                <p className="text-gray-300 text-lg mb-6 flex-grow">
-                  The essential companion for waste pickers. Track your collections, connect with buyers, and grow your business with our powerful platform.
-                </p>
-                
-                <motion.a 
-                  href="/kenawpwa.apk" 
-                  className="w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-xl hover:shadow-2xl hover:shadow-green-500/50 flex items-center justify-center font-bold text-lg transition-all duration-200"
+                  className="flex justify-center"
                   whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
                 >
-                  <Download className="w-6 h-6 mr-3" />
-                  Download Now
-                </motion.a>
-              </div>
-            </motion.div>
-
-            {/* Platform App Card */}
-            <motion.div 
-              variants={itemVariants}
-              className="bg-gradient-to-br from-slate-700/60 to-purple-700/40 p-8 rounded-3xl shadow-2xl border-2 border-cyan-500/50 hover:border-cyan-500 transition-all duration-300"
-              whileHover={{ y: -15, scale: 1.02 }}
-            >
-              <div className="flex flex-col h-full">
-                <motion.div
-                  className="rounded-2xl mb-8 overflow-hidden shadow-2xl border-2 border-cyan-500/30 bg-gradient-to-br from-cyan-600/20 to-blue-600/20 flex items-center justify-center h-64"
-                  whileHover={{ scale: 1.08 }}
-                >
-                  <div className="text-center">
-                    <Download className="w-24 h-24 text-cyan-400 mx-auto mb-4" />
-                    <p className="text-cyan-300 font-semibold text-lg">Coming Soon</p>
+                  <div className="bg-white p-6 rounded-2xl shadow-lg border-2 border-gray-300">
+                    <img 
+                      src="/frame.png" 
+                      alt="KeNaWPWA App QR Code" 
+                      className="w-72 h-72 object-contain"
+                    />
+                    <p className="text-center text-gray-600 font-semibold mt-4">Scan to Download</p>
                   </div>
                 </motion.div>
-                
-                <h3 className="text-3xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                  Web Platform
-                </h3>
-                <p className="text-gray-300 text-lg mb-6 flex-grow">
-                  Access KeNaWPWA from your browser. Manage your profile, view statistics, and collaborate with the community online.
-                </p>
-                
-                <button 
-                  disabled
-                  className="w-full bg-gray-600 text-white px-8 py-4 rounded-xl cursor-not-allowed flex items-center justify-center font-bold text-lg opacity-70"
-                >
-                  <Download className="w-6 h-6 mr-3" />
-                  Coming Soon
-                </button>
+
+                {/* Download Details */}
+                <div className="flex flex-col">
+                  <h3 className="text-4xl font-bold text-gray-900 mb-4">
+                    Pickers' App
+                  </h3>
+                  <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                    The essential companion for waste pickers. Track your collections, connect with buyers, and grow your business with our powerful platform.
+                  </p>
+                  
+                  <motion.a 
+                    href="/kenawpwa.apk" 
+                    className="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-full hover:shadow-2xl hover:shadow-green-600/50 flex items-center justify-center font-bold text-lg transition-all duration-200 mb-6"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Download className="w-6 h-6 mr-3" />
+                    Download App
+                  </motion.a>
+
+                  {/* Requirements */}
+                  <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mb-6">
+                    <p className="text-sm text-gray-700">
+                      <span className="font-semibold text-blue-900">Requirements:</span> Android 8.0 or higher
+                    </p>
+                  </div>
+
+                  {/* Legal Links */}
+                  <div className="space-y-3">
+                    <p className="text-sm text-gray-600 mb-3">Before downloading, please review:</p>
+                    <motion.a 
+                      href="/KENAWPWA_TERMS_AND_CONDITIONS.pdf" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-center bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-200 font-semibold"
+                      whileHover={{ scale: 1.05 }}
+                    >
+                      Terms & Conditions
+                    </motion.a>
+                    <motion.a 
+                      href="/KENAWPWA_PRIVACY_POLICY.pdf" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-center border-2 border-gray-900 text-gray-900 px-6 py-3 rounded-lg hover:bg-gray-900 hover:text-white transition-all duration-200 font-semibold"
+                      whileHover={{ scale: 1.05 }}
+                    >
+                      Privacy Policy
+                    </motion.a>
+                  </div>
+                </div>
               </div>
             </motion.div>
           </motion.div>
@@ -469,38 +457,36 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-r from-amber-500/10 to-orange-500/10 border-2 border-amber-500/50 rounded-2xl p-8 md:p-12 max-w-4xl mx-auto"
+            className="bg-yellow-50 border-2 border-yellow-300 rounded-2xl p-8 max-w-4xl mx-auto mt-12"
           >
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-10 w-10 rounded-full bg-amber-500/20">
-                  <span className="text-2xl">📖</span>
-                </div>
+                <span className="text-3xl">⚠️</span>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-amber-300 mb-3">
+                <h3 className="text-2xl font-bold text-yellow-900 mb-3">
                   IMPORTANT: Please Read Before Downloading
                 </h3>
-                <ul className="text-gray-200 space-y-2 text-lg">
+                <ul className="text-gray-800 space-y-2 text-lg">
                   <li className="flex items-start">
-                    <span className="text-amber-400 font-bold mr-3">1.</span>
-                    <span>Review the app guidelines and terms of service before installation</span>
+                    <span className="text-yellow-600 font-bold mr-3">1.</span>
+                    <span>Review the Terms & Conditions and Privacy Policy before installation</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-amber-400 font-bold mr-3">2.</span>
+                    <span className="text-yellow-600 font-bold mr-3">2.</span>
                     <span>Ensure your device meets the minimum system requirements (Android 8.0+)</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-amber-400 font-bold mr-3">3.</span>
+                    <span className="text-yellow-600 font-bold mr-3">3.</span>
                     <span>Prepare your registration details (National ID, Phone Number, Email)</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="text-amber-400 font-bold mr-3">4.</span>
+                    <span className="text-yellow-600 font-bold mr-3">4.</span>
                     <span>Complete full registration upon first launch to activate your account</span>
                   </li>
                 </ul>
-                <p className="text-gray-300 mt-6 text-base">
-                  For technical support or questions, contact us at <span className="font-semibold text-cyan-400">info@kenawpwa.org</span> or call <span className="font-semibold text-cyan-400">+254 702 501 135</span>
+                <p className="text-gray-700 mt-6 text-base">
+                  For technical support or questions, contact us at <span className="font-semibold text-gray-900">info@kenawpwa.org</span> or call <span className="font-semibold text-gray-900">+254 702 501 135</span>
                 </p>
               </div>
             </div>
