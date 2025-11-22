@@ -558,7 +558,7 @@ function App() {
             viewport={{ once: true }}
           >
             <p className="text-center text-gray-400 text-sm">
-              © 2025 KeNaWPWA. All rights reserved. Made with passion for a sustainable Kenya.
+              © 2025 KeNaWPWA. All rights reserved. Powered by MaraTech
             </p>
           </motion.div>
         </div>
