@@ -37,9 +37,9 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="fixed top-0 w-full bg-gradient-to-r from-slate-900/95 to-purple-900/95 backdrop-blur-xl border-b border-purple-500/20 z-50">
+      <header className="fixed top-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-200 z-50 shadow-sm">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             <motion.div 
@@ -49,7 +49,7 @@ function App() {
               transition={{ duration: 0.5 }}
             >
               <img src="https://res.cloudinary.com/dylmsnibf/image/upload/v1738153746/WhatsApp_Image_2025-01-29_at_15.28.35_6b360c36_opwbpe.jpg" alt="Logo" width={100} />
-              <span className="text-2xl font-bold bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">KeNaWPWA</span>
+              <span className="text-2xl font-bold bg-gradient-to-r from-green-600 to-cyan-600 bg-clip-text text-transparent">KeNaWPWA</span>
             </motion.div>
             <nav className="hidden md:flex space-x-8">
               {['About', 'Initiatives', 'Training', 'Download App'].map((item, idx) => (
@@ -59,7 +59,7 @@ function App() {
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: idx * 0.1 }}
-                  className="text-gray-300 hover:text-cyan-400 transition-colors duration-200"
+                  className="text-gray-600 hover:text-green-600 transition-colors duration-200"
                 >
                   {item}
                 </motion.a>
@@ -80,7 +80,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
         {/* Animated background elements */}
         <motion.div 
           className="absolute inset-0 opacity-30"
@@ -109,13 +109,13 @@ function App() {
             >
               <motion.h1 
                 variants={itemVariants}
-                className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-green-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent mb-6"
+                className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-green-600 via-cyan-600 to-blue-600 bg-clip-text text-transparent mb-6"
               >
                 Empowering Waste Pickers Across Kenya
               </motion.h1>
               <motion.p 
                 variants={itemVariants}
-                className="text-xl text-gray-300 mb-8 leading-relaxed"
+                className="text-xl text-gray-700 mb-8 leading-relaxed"
               >
                 Join KeNaWPWA in our mission to create sustainable waste management solutions while improving lives and protecting our planet.
               </motion.p>
@@ -150,7 +150,7 @@ function App() {
               viewport={{ once: true }}
             >
               <motion.div 
-                className="rounded-2xl shadow-2xl overflow-hidden border border-cyan-500/30"
+                className="rounded-2xl shadow-2xl overflow-hidden border border-gray-300"
                 whileHover={{ scale: 1.02 }}
               >
                 <img 
@@ -164,13 +164,13 @@ function App() {
         </div>
       </section>
       {/* About Section */}
-      <section id="about" className="py-20 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 relative">
+      <section id="about" className="py-20 bg-gray-50 relative">
         <div className="container mx-auto px-4">
           <motion.h2 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent"
+            className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-green-600 to-cyan-600 bg-clip-text text-transparent"
           >
             About KeNaWPWA
           </motion.h2>
@@ -180,10 +180,10 @@ function App() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-slate-700/50 to-purple-700/30 p-8 rounded-2xl shadow-xl border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300"
+              className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 hover:border-green-300 transition-all duration-300"
             >
-              <h3 className="text-2xl font-semibold mb-4 text-cyan-400">Our Mission</h3>
-              <p className="text-gray-300 leading-relaxed mb-6">
+              <h3 className="text-2xl font-semibold mb-4 text-green-600">Our Mission</h3>
+              <p className="text-gray-700 leading-relaxed mb-6">
                 KeNaWPWA works in collaboration with CEJAD to empower waste pickers and promote sustainable waste management practices across Kenya.
               </p>
               <motion.div
@@ -203,27 +203,27 @@ function App() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-slate-700/50 to-purple-700/30 p-8 rounded-2xl shadow-xl border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300"
+              className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 hover:border-green-300 transition-all duration-300"
             >
-              <h3 className="text-2xl font-semibold mb-4 text-cyan-400">Our Impact</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-green-600">Our Impact</h3>
               <div className="grid grid-cols-2 gap-6 mb-6">
                 <motion.div 
                   className="text-center bg-gradient-to-br from-green-500/10 to-cyan-500/10 p-6 rounded-xl border border-green-500/30"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <p className="text-4xl font-bold bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
+                  <p className="text-4xl font-bold bg-gradient-to-r from-green-600 to-cyan-600 bg-clip-text text-transparent">
                     <CountUp end={700} duration={3} />+
                   </p>
-                  <p className="text-gray-300 mt-2">Members</p>
+                  <p className="text-gray-700 mt-2">Members</p>
                 </motion.div>
                 <motion.div 
                   className="text-center bg-gradient-to-br from-green-500/10 to-cyan-500/10 p-6 rounded-xl border border-green-500/30"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <p className="text-4xl font-bold bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">
+                  <p className="text-4xl font-bold bg-gradient-to-r from-green-600 to-cyan-600 bg-clip-text text-transparent">
                     <CountUp end={3} duration={2} />
                   </p>
-                  <p className="text-gray-300 mt-2">Cities</p>
+                  <p className="text-gray-700 mt-2">Cities</p>
                 </motion.div>
               </div>
               <motion.div
@@ -242,13 +242,13 @@ function App() {
       </section>
 
       {/* Initiatives Section */}
-      <section id="initiatives" className="py-20 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative">
+      <section id="initiatives" className="py-20 bg-white relative">
         <div className="container mx-auto px-4">
           <motion.h2 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent"
+            className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-green-600 to-cyan-600 bg-clip-text text-transparent"
           >
             Our Initiatives
           </motion.h2>
@@ -279,17 +279,17 @@ function App() {
               <motion.div 
                 key={idx}
                 variants={itemVariants}
-                className="group bg-gradient-to-br from-slate-700/50 to-purple-700/30 p-8 rounded-2xl shadow-xl border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20"
+                className="group bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:border-green-300 hover:shadow-lg transition-all duration-300"
                 whileHover={{ y: -10 }}
               >
                 <motion.div 
-                  className="w-14 h-14 bg-gradient-to-br from-green-500 to-cyan-500 rounded-xl flex items-center justify-center mb-6 group-hover:shadow-lg group-hover:shadow-cyan-500/50"
+                  className="w-14 h-14 bg-gradient-to-br from-green-600 to-cyan-600 rounded-xl flex items-center justify-center mb-6 group-hover:shadow-lg group-hover:shadow-green-300/50"
                   whileHover={{ rotate: 10, scale: 1.1 }}
                 >
                   <item.icon className="w-8 h-8 text-white" />
                 </motion.div>
-                <h3 className="text-xl font-semibold mb-4 text-cyan-400">{item.title}</h3>
-                <p className="text-gray-300 leading-relaxed">
+                <h3 className="text-xl font-semibold mb-4 text-green-600">{item.title}</h3>
+                <p className="text-gray-700 leading-relaxed">
                   {item.desc}
                 </p>
               </motion.div>
@@ -298,13 +298,13 @@ function App() {
         </div>
       </section>
       {/* Training Programs */}
-      <section id="training" className="py-20 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800">
+      <section id="training" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <motion.h2 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent"
+            className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-green-600 to-cyan-600 bg-clip-text text-transparent"
           >
             Training Programs
           </motion.h2>
@@ -323,7 +323,7 @@ function App() {
               <motion.div 
                 key={city}
                 variants={itemVariants}
-                className="bg-gradient-to-br from-slate-700/50 to-purple-700/30 p-6 rounded-2xl shadow-xl border border-cyan-500/20 hover:border-cyan-500/50 transition-all duration-300 overflow-hidden group"
+                className="bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:border-green-300 hover:shadow-lg transition-all duration-300 overflow-hidden group"
                 whileHover={{ y: -10 }}
               >
                 <motion.div 
@@ -331,14 +331,14 @@ function App() {
                   whileHover={{ x: 5 }}
                 >
                   <motion.div 
-                    className="w-10 h-10 bg-gradient-to-br from-green-500 to-cyan-500 rounded-lg flex items-center justify-center mr-3"
+                    className="w-10 h-10 bg-gradient-to-br from-green-600 to-cyan-600 rounded-lg flex items-center justify-center mr-3"
                     whileHover={{ rotate: 10 }}
                   >
                     <MapPin className="w-6 h-6 text-white" />
                   </motion.div>
-                  <h3 className="text-xl font-semibold text-cyan-400">{city}</h3>
+                  <h3 className="text-xl font-semibold text-green-600">{city}</h3>
                 </motion.div>
-                <p className="text-gray-300 mb-4">
+                <p className="text-gray-700 mb-4">
                   Comprehensive training programs for waste pickers in {city}.
                 </p>
                 <motion.div
@@ -495,7 +495,7 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-slate-900 to-slate-800 border-t border-cyan-500/20 text-white py-16">
+      <footer className="bg-gray-900 text-white py-16">
         <div className="container mx-auto px-4">
           <motion.div 
             className="grid md:grid-cols-4 gap-12 mb-12"
@@ -509,21 +509,21 @@ function App() {
                 className="flex items-center space-x-2 mb-4"
                 whileHover={{ x: 5 }}
               >
-                <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                <div className="w-10 h-10 bg-gradient-to-br from-green-600 to-cyan-600 rounded-lg flex items-center justify-center">
                   <Recycle className="w-6 h-6 text-white" />
                 </div>
-                <span className="text-xl font-bold bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">KeNaWPWA</span>
+                <span className="text-xl font-bold bg-gradient-to-r from-green-600 to-cyan-600 bg-clip-text text-transparent">KeNaWPWA</span>
               </motion.div>
               <p className="text-gray-400">
                 Empowering waste pickers across Kenya for a sustainable future.
               </p>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <h4 className="text-lg font-semibold mb-4 text-cyan-400">Quick Links</h4>
+              <h4 className="text-lg font-semibold mb-4 text-green-400">Quick Links</h4>
               <ul className="space-y-2">
                 {['About', 'Initiatives', 'Training'].map((link) => (
                   <li key={link}>
-                    <a href={`#${link.toLowerCase()}`} className="text-gray-400 hover:text-cyan-400 transition-colors duration-200">
+                    <a href={`#${link.toLowerCase()}`} className="text-gray-400 hover:text-green-400 transition-colors duration-200">
                       {link}
                     </a>
                   </li>
@@ -531,20 +531,20 @@ function App() {
               </ul>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <h4 className="text-lg font-semibold mb-4 text-cyan-400">Contact</h4>
+              <h4 className="text-lg font-semibold mb-4 text-green-400">Contact</h4>
               <ul className="space-y-3">
-                <li className="flex items-center text-gray-400 hover:text-cyan-400 transition-colors duration-200 cursor-pointer">
+                <li className="flex items-center text-gray-400 hover:text-green-400 transition-colors duration-200 cursor-pointer">
                   <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
                   +254 702 501 135
                 </li>
-                <li className="flex items-center text-gray-400 hover:text-cyan-400 transition-colors duration-200 cursor-pointer">
+                <li className="flex items-center text-gray-400 hover:text-green-400 transition-colors duration-200 cursor-pointer">
                   <Mail className="w-4 h-4 mr-2 flex-shrink-0" />
                   info@kenawpwa.org
                 </li>
               </ul>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <h4 className="text-lg font-semibold mb-4 text-cyan-400">Powered By</h4>
+              <h4 className="text-lg font-semibold mb-4 text-green-400">Powered By</h4>
               <p className="text-sm text-gray-400 leading-relaxed">
                 MaraTech Innovation Center
               </p>
@@ -552,7 +552,7 @@ function App() {
           </motion.div>
           
           <motion.div 
-            className="border-t border-cyan-500/20 pt-8"
+            className="border-t border-gray-700 pt-8"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
